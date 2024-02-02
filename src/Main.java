@@ -18,6 +18,15 @@ public class Main {
             switch (choice) {
                 case 1:
                     System.out.println("O jogo começa...");
+
+                    System.out.print("Você acorda... espera qual é o seu nome? ");
+
+                    while(scanner.hasNext()) {
+                        if (scanner.nextLine().isBlank()) break;
+                    }
+
+                    String name = scanner.nextLine();
+                    System.out.printf("Certo, %s", name);
                 case 2:
                     System.exit(0);
                 default:
